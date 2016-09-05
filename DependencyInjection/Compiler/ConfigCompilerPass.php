@@ -48,8 +48,8 @@ class ConfigCompilerPass implements CompilerPassInterface
                 }
             }
         }
-        $SettingArrayJson = json_encode($settingArray);
-        $this->writeToCache($SettingArrayJson);
+        $settingArrayJson = json_encode($settingArray);
+        $this->writeToCache($settingArrayJson);
     }
 
     protected function composeSettingPathFor($bundle)
